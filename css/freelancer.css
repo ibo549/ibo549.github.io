@@ -27,15 +27,20 @@ a.active {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
-    
+     
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
+h3
+{	
+	LINE-HEIGHT:30px;	
+	margin-top: -5px;
+    font-size: 1em;
+	font-weight: 500;
+}
 hr.star-light, hr.star-top,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -96,13 +101,13 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 50px;
 }
 
 header img {
     display: block;
-    margin: 0 auto 10px;
+    margin: 0 auto 5px;
 }
 
 header .intro-text .name {
@@ -113,13 +118,13 @@ header .intro-text .name {
 }
 
 header .intro-text .skills {
-    font-size: 1.25em;
-    font-weight: 300;
+    font-size: 1em;
+    font-weight: 100;
 }
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 130px;
+        padding-top: 100px;
         padding-bottom: 100px;
     }
 
@@ -128,31 +133,32 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
-        font-size: 1.75em;
+        font-size: 1.30em;
+		font-weight: 300;
     }
 }
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 8px 0;
+        padding: 16px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 1em;
+        font-size: 1.7em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 4px 0;
+        padding: 1px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 }
 
@@ -177,8 +183,9 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+	background-color: #0e161e;
+    border-color: #000000;
 }
-
 section {
     padding: 100px 0;
 }
