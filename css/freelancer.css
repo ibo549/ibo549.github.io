@@ -435,11 +435,28 @@ footer .footer-below {
     box-shadow: none;
 }
 
+.portfolio-modal .modal-content h5 {
+    margin: 5px;
+    font-size: 3em;
+}
 .portfolio-modal .modal-content h2 {
-    margin: 0;
-    font-size: 2em;
+    margin: 5px;
+    font-size: 1em;
+}
+.portfolio-modal .modal-content h4 {
+    margin: -5px;
+    font-size: 1.1em;
+	LINE-HEIGHT:30px;	
+	font-weight: 100;
+	color: #45513F;
 }
 
+.portfolio-modal .modal-content a {
+    margin: 0;
+
+	color: #AB6361;
+    font-size: 1em;
+}
 .portfolio-modal .modal-content img {
     margin-bottom: 30px;
 }
