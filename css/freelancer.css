@@ -378,21 +378,23 @@ footer h3 {
     margin-bottom: 30px;
 }
 
-footer .contact {
-    padding-top: 100px;
-   
-	text-align: center;
-}
 
 footer .footer-col {
     margin-bottom: 50px;
-	
+	text-align: center;
 }
 
 footer .footer-below {
-    padding: 25px 0;
+    padding: 10px 0;
     background-color: #233140;
 }
+
+section .buttons{
+ margin-top: 25px;
+ margin-bottom: 75px;
+ text-align: center;
+}
+
 
 .btn-social {
     display: inline-block;
