@@ -230,7 +230,7 @@ section.contact {
 	padding-top: 80px;
 }
 
-#talkvideo { width:100%; }
+#talkvideo { width:80%; }
 
 @media(max-width:767px) {
     section {
