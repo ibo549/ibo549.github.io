@@ -222,6 +222,13 @@ section.success {
     background: #DFE0D9;
 }
 
+section.contact {
+    color: #45513F;
+    background: #EEE6D9;
+	padding: 0px 0;
+	padding-top: 80px;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
@@ -371,13 +378,15 @@ footer h3 {
     margin-bottom: 30px;
 }
 
-footer .footer-above {
-    padding-top: 50px;
-    background-color: #2c3e50;
+footer .contact {
+    padding-top: 100px;
+   
+	text-align: center;
 }
 
 footer .footer-col {
     margin-bottom: 50px;
+	
 }
 
 footer .footer-below {
@@ -389,8 +398,8 @@ footer .footer-below {
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 2px solid #fff;
-    border-radius: 100%;
+    border: 2px solid #45513F;
+    border-radius: 30%;
     text-align: center;
     font-size: 20px;
     line-height: 45px;
@@ -401,6 +410,7 @@ footer .footer-below {
 .btn.active {
     outline: 0;
 }
+
 
 .scroll-top {
     z-index: 1049;
@@ -552,8 +562,3 @@ footer .footer-below {
     /* customize your rating stars here */
     float: right;
   }
-
-
-
-
-
