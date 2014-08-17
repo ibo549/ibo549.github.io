@@ -230,6 +230,9 @@ section.contact {
 	padding-top: 80px;
 }
 
+iframe {
+width:80%;
+}
 #talkvideo { width:80%; }
 
 @media(max-width:767px) {
