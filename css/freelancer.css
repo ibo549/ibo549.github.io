@@ -230,13 +230,6 @@ section.contact {
 	padding-top: 80px;
 }
 
-#preziMe{
-width:70%;
-}
-#preziDarkMatter{
-width:70%;
-}
-#talkvideo { width:70%; }
 
 @media(max-width:767px) {
     section {
@@ -577,6 +570,13 @@ section .buttons{
  #lfmMostRecentTrack { font-size: 0.6em; margin-top:8px;}
  #lfmMostRecentTrackImage { width:48px; height:48px; float:left; margin-right:10px;}
  #lfmMostRecentTrackDate {font-style;italic}
- #lfmMostRecentHeading {font-size: 0.8em; font-style: italic;}
- 
+ #lfmMostRecentHeading {font-size: 0.8em; font-style: italic;} 
  #lastsong{margin-top:20px;}
+ 
+ #preziMe{
+width:60%;
+}
+#preziDarkMatter{
+width:70%;
+}
+#talkvideo { width:70%; }
