@@ -111,10 +111,10 @@
 					</div>
 				</div>
 			</div>
-			 <div class="row" align="center">						 
+			<div class="row" align="center">						 
 							 <div class="col-lg-6">
 									<a title="Previous Places" href="#portfolioModalPlaces" class="portfolio-link btn-utility utility-btn-outline" data-toggle="modal"><i class="fa fa-fw fa-home"></i></a>
-									<p> I currently live in </br> Bielsko-Biała, Poland </p>
+									<h5> I currently live in </br> Bielsko-Biała, Poland </h5>
 							</div>
 						 	 <div class="col-lg-6">
 								 	<a  title="Work History" href="#portfolioModalBooks"  class="portfolio-link btn-utility utility-btn-outline" data-toggle="modal"><i class="fa fa-fw fa-suitcase"></i></a>
@@ -142,14 +142,14 @@
 			</div>
 	 
 	 <!-- The last Song I've listened on Spotify; retrieved through lastFm scrobbler. -->
-	  <div class="song" id="lastsong">
+	  <div class="song" id="lastsong" title="Data is retrieved from Spotify through LastFM scrobbler API">
 			<div class="songheader">
 			   <span id="lfmMostRecentHeading">this is the last song I've listened:</span> <br/>
 			</div>
 			<div class="songcolleft">
 				<div class="songcol1">	  		
 					<div 	id="lfmMostRecentTrack">			
-							<span id="lfmMostRecentTrackArtist"></span> - <a id="lfmMostRecentTrackTitle" href="" target="new"></a><br/>
+							<span id="lfmMostRecentTrackArtist"></span> - <a title="song page" id="lfmMostRecentTrackTitle" href="" target="new"></a><br/>
 							<span id="lfmMostRecentTrackAlbum"></span><br/>
 							<span id="lfmMostRecentTrackDate"></span>  <br/>	
 					</div>							
@@ -315,7 +315,7 @@
 						</div>
 						 <hr class="star-top">
 						<div class="prezi" id="prezi">
-						<iframe id="preziDarkMatter" src="http://prezi.com/embed/jba3nuitixyv/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined&amp;html5=1" width="800" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
+						<iframe id="preziDarkMatter" src="http://prezi.com/embed/jba3nuitixyv/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined&amp;html5=1"  height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
 						</div>
 					    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -332,15 +332,18 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                   
+                <div class="row">                   
                         <div class="modal-body">
-                            <h2>Previous Places</h2>
-                            <hr class="star-primary">
-                            <iframe src="https://mapsengine.google.com/map/embed?mid=zQGEQ8wMuw8k.k7PVgiWa3_CQ" width="800" height="300"></iframe>	
-                          
+						<div class="col-lg-12 text-center">
+                            <h5>Previous Places</h5>
+                            <hr class="star-top">
+			
+							 <iframe id="placesMap" src="https://mapsengine.google.com/map/embed?mid=zQGEQ8wMuw8k.k7PVgiWa3_CQ" width="1024" height="768" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>					
+						
+                           </br>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
+						</div>
                     </div>
                 </div>
             </div>
