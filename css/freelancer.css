@@ -1,7 +1,6 @@
 /*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Halil Karaca - Forked from Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
 body {
@@ -235,74 +234,14 @@ section.contact {
 	padding-top: 80px;
 }
 
-
-@media(max-width:767px) {
-    section {
-        padding: 75px 0;
-    }
-
-    section.first {
-        padding-top: 75px;
-    }
+section .buttons{
+ margin-top: 25px;
+ margin-bottom: 75px;
+ text-align: center;
 }
 
-#portfolio .portfolio-item {
-    right: 0;
-    margin: 0 0 15px;
-}
 
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background: rgba(24,188,156,.9);
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-    margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
-    margin: 0;
-}
-
-#portfolio * {
-    z-index: 2;
-}
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
-
+ /* Social Buttons */
 .btn-social {
     display: inline-block;
     width: 50px;
@@ -313,14 +252,11 @@ section.contact {
     font-size: 20px;
     line-height: 45px;
 }
-
 .btn:focus,
 .btn:active,
 .btn.active {
     outline: 0;
 }
-
-
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #233140;
@@ -338,6 +274,7 @@ section.contact {
     background: #583A52;
 }
 
+  /* Utility Buttons */
 .btn-utility {
     display: inline-block;
     width: 100px;
@@ -348,7 +285,6 @@ section.contact {
     font-size: 40px;
     line-height: 90px;
 }
-
 .utility-btn-outline {
     margin-top: 15px;
     border: solid 2px #233140;
@@ -368,14 +304,7 @@ section.contact {
 
 
 
-form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #eee;
-}
-
-footer {
-    color: #fff;
-}
-
+ /* Footer */
 footer h3 {
     margin-bottom: 30px;
 }
@@ -391,30 +320,10 @@ footer .footer-below {
     background-color: #233140;
 }
 
-section .buttons{
- margin-top: 25px;
- margin-bottom: 75px;
- text-align: center;
+footer {
+color: #fff;
+font-size: 0.7em;
 }
-
-
-.btn-social {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #45513F;
-    border-radius: 30%;
-    text-align: center;
-    font-size: 20px;
-    line-height: 45px;
-}
-
-.btn:focus,
-.btn:active,
-.btn.active {
-    outline: 0;
-}
-
 
 .scroll-top {
     z-index: 1049;
@@ -514,6 +423,7 @@ section .buttons{
     transform: rotate(90deg);
 }
  
+  /* Books */
   .gr_custom_container_1408048327 {
     /* customize your Goodreads widget container here*/
     border: 3px solid gray;
@@ -568,7 +478,7 @@ section .buttons{
   }
 
 
- 
+ /* Last Song */
 .song{
   position: relative;
    overflow: hidden;
@@ -580,7 +490,6 @@ section .buttons{
    transition: all .5s ease-in-out;
    cursor: default;
 }
-
 .song:hover,
 .song:focus,
 .song:active,
@@ -633,11 +542,13 @@ font-weight: bold;
 #lfmMostRecentTrackImage { width:48px; height:48px; float:right;}
 #lfmMostRecentTrack {margin-left: 5px;}
 
+
+
 #preziMe{
 width:60%!important;
 }
 #preziDarkMatter{
-width:100%!important;
+width:70%!important;
 }
 #talkvideo { width:70%!important; }
 
