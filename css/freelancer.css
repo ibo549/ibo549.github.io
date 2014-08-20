@@ -298,6 +298,24 @@ section.contact {
     }
 }
 
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #45513F;
+    border-radius: 30%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -306,7 +324,6 @@ section.contact {
     background: 0 0;
     transition: all .3s ease-in-out;
 }
-
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
@@ -315,6 +332,36 @@ section.contact {
     color: #e2ab79;
     background: #583A52;
 }
+
+.btn-utility {
+	margin-left: 20px; 
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #45513F;
+    border-radius: 40%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 90px;
+}
+
+.utility-btn-outline {
+    margin-top: 15px;
+    border: solid 2px black;
+    font-size: 40px;
+    color: black;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+.utility-btn-outline:hover,
+.utility-btn-outline:focus,
+.utility-btn-outline:active,
+.utility-btn-outline.active {
+    border: solid 2px #583A52;
+    color: #e2ab79;
+    background: #583A52;
+}
+
 
 .floating-label-form-group {
     position: relative;
@@ -567,11 +614,7 @@ section .buttons{
     float: right;
   }
 
- #lfmMostRecentTrack { font-size: 0.6em; margin-top:8px;}
- #lfmMostRecentTrackImage { width:48px; height:48px; float:left; margin-right:10px;}
- #lfmMostRecentTrackDate {font-style;italic}
- #lfmMostRecentHeading {font-size: 0.8em; font-style: italic;} 
- #lastsong{margin-top:20px;}
+
  
  #preziMe{
 width:60%;
@@ -580,3 +623,47 @@ width:60%;
 width:70%;
 }
 #talkvideo { width:70%; }
+
+
+.song{
+  position: relative;
+   overflow: hidden;
+   margin: 0px auto;
+   width: 270px;
+  
+   margin-top:80px;
+}
+.songheader{
+  text-align:center;
+   width: 100%;
+   font-size: 0.8em; 
+   font-style: italic; 
+   text-align:center;
+  
+}
+.songcolleft{
+    position: relative;
+   width: 100%;
+   right: 80%;
+ 
+}
+.songcol1{
+   position: relative;
+   overflow: hidden;
+   float: left;
+   width: 78%;
+   left: 102%;
+   font-size: 0.6em; margin-top:5px;
+  
+}
+.songcol2{
+   position: relative;
+   overflow: hidden;
+   float: right;
+   width: 18%;
+   left: 2%;
+  
+}
+ #lfmMostRecentTrackDate {font-style;italic}
+ #lfmMostRecentTrackImage { width:48px; height:48px; float:right;}
+#lfmMostRecentTrack {margin-left: 5px;}

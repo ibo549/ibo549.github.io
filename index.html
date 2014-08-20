@@ -107,10 +107,21 @@
 				   <br>	read <a href="#portfolioModalBooks" class="portfolio-link" data-toggle="modal">these</a> kind of books on my kindle, slap the bass on the stage, act in short movies and change the diaper.
 				   </h3>													
 						</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+											
+					</div>
+				</div>
+			</div>
+			 <div class="row" align="center">						 
+							 <div class="col-lg-6">
+									<a title="Previous Places" href="#portfolioModalPlaces" class="portfolio-link btn-utility utility-btn-outline" data-toggle="modal"><i class="fa fa-fw fa-home"></i></a>
+									<p> I currently live in </br> Bielsko-Biała, Poland </p>
+							</div>
+						 	 <div class="col-lg-6">
+								 	<a  title="Work History" href="#portfolioModalBooks"  class="portfolio-link btn-utility utility-btn-outline" data-toggle="modal"><i class="fa fa-fw fa-suitcase"></i></a>
+							</div>								 						
+			</div>
+		</div>
+		
     </header>
 
 	 <!-- Me Section -->
@@ -126,38 +137,44 @@
 			
 		<!-- Prezi about me -->			
 			<div class="row text-center">		
-            <iframe id="preziMe" src="http://prezi.com/embed/rdsnvl3tbkxl/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined&amp;html5=1" width="800" height="300" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>						
+            <iframe id="preziMe" src="http://prezi.com/embed/rdsnvl3tbkxl/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined&amp;html5=1" 
+			width="800" height="300" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>						
 			</div>
-	   
-	   <!-- The last Song I've listened on Spotify; retrieved through lastFm scrobbler. -->
-			
-			<div id="lastsong">
-				<script type="text/javascript" >
-					function lfmMostRecentTrack(JSONdata) {
-					  var oTrack = (new Array().concat(JSONdata.recenttracks.track))[0];
-					  if(oTrack.image[1]["#text"] != "")
-						document.getElementById("lfmMostRecentTrackImage").src = oTrack.image[1]["#text"] ;
-					  if(oTrack.streamable == "1")
-						document.getElementById("lfmMostRecentTrackPlayIcon").style.display = "inline";
-					  document.getElementById("lfmMostRecentTrackArtist").innerHTML = oTrack.artist["#text"];
-					  document.getElementById("lfmMostRecentTrackTitle").href = oTrack.url;
-					  document.getElementById("lfmMostRecentTrackTitle").innerHTML = oTrack.name;
-					  document.getElementById("lfmMostRecentTrackAlbum").innerHTML = oTrack.album["#text"];
-					  document.getElementById("lfmMostRecentTrackDate").innerHTML = (typeof oTrack.date=="undefined"?"now playing":oTrack.date["#text"]);
-					}
-			</script>
-					<span id="lfmMostRecentHeading">this is the last song I've listened:</span> <br/>
-					<img id="lfmMostRecentTrackImage" src="http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png"/>	
-				<div id="lfmMostRecentTrack">		  	
-				
-					<span id="lfmMostRecentTrackArtist"></span> - <a id="lfmMostRecentTrackTitle" href="" target="new"></a><br/>
-					<span id="lfmMostRecentTrackAlbum"></span><br/>
-					<span id="lfmMostRecentTrackDate"></span>  <br/>	
-				</div>							
-				<script type="text/javascript" src="http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=HalilKaraca&api_key=54f8f15133336606e882fdf20148d123&limit=1&format=json&callback=lfmMostRecentTrack"></script>
+	 
+	 <!-- The last Song I've listened on Spotify; retrieved through lastFm scrobbler. -->
+	  <div class="song" id="lastsong">
+			<div class="songheader">
+			   <span id="lfmMostRecentHeading">this is the last song I've listened:</span> <br/>
 			</div>
-           
-		</div>      
+			<div class="songcolleft">
+				<div class="songcol1">	  		
+					<div 	id="lfmMostRecentTrack">			
+							<span id="lfmMostRecentTrackArtist"></span> - <a id="lfmMostRecentTrackTitle" href="" target="new"></a><br/>
+							<span id="lfmMostRecentTrackAlbum"></span><br/>
+							<span id="lfmMostRecentTrackDate"></span>  <br/>	
+					</div>							
+				</div>
+				<div class="songcol2">
+				  <img id="lfmMostRecentTrackImage" src="http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png"/>	
+				</div> 
+			</div> 
+			<script type="text/javascript" >
+							function lfmMostRecentTrack(JSONdata) {
+							  var oTrack = (new Array().concat(JSONdata.recenttracks.track))[0];
+							  if(oTrack.image[1]["#text"] != "")
+								document.getElementById("lfmMostRecentTrackImage").src = oTrack.image[1]["#text"] ;
+							  if(oTrack.streamable == "1")
+								document.getElementById("lfmMostRecentTrackPlayIcon").style.display = "inline";
+							  document.getElementById("lfmMostRecentTrackArtist").innerHTML = oTrack.artist["#text"];
+							  document.getElementById("lfmMostRecentTrackTitle").href = oTrack.url;
+							  document.getElementById("lfmMostRecentTrackTitle").innerHTML = oTrack.name;
+							  document.getElementById("lfmMostRecentTrackAlbum").innerHTML = oTrack.album["#text"];
+							  document.getElementById("lfmMostRecentTrackDate").innerHTML = (typeof oTrack.date=="undefined"?"now playing":oTrack.date["#text"]);
+							}
+					</script>
+			<script type="text/javascript" src="http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=HalilKaraca&api_key=54f8f15133336606e882fdf20148d123&limit=1&format=json&callback=lfmMostRecentTrack"></script>				
+	</div>
+	      
     </section>
 	
 	 <!-- Around the Web Section & Footers -->
@@ -184,7 +201,7 @@
                             </li>
                             
 							<li title="CodePlex">
-                                <a href="https://www.codeplex.com/site/users/view/halilk" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                <a href="https://www.codeplex.com/site/users/view/halilk" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-slack"></i></a>
                             </li>
 							</br>
 							<li title="LinkedIn">
@@ -306,7 +323,7 @@
                 </div>
             </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModalPlaces" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -318,7 +335,7 @@
                 <div class="row">
                    
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Previous Places</h2>
                             <hr class="star-primary">
                             <iframe src="https://mapsengine.google.com/map/embed?mid=zQGEQ8wMuw8k.k7PVgiWa3_CQ" width="800" height="300"></iframe>	
                           
