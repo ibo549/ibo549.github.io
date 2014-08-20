@@ -578,6 +578,7 @@ section .buttons{
    margin-top:80px;
    color: #233140;
    transition: all .5s ease-in-out;
+   cursor: default;
 }
 
 .song:hover,
@@ -633,11 +634,11 @@ font-weight: bold;
 #lfmMostRecentTrack {margin-left: 5px;}
 
 #preziMe{
-width:60%;
+width:60%!important;
 }
 #preziDarkMatter{
-width:70%;
+width:70%!important;
 }
-#talkvideo { width:70%; }
+#talkvideo { width:70%!important; }
 
-#placesMap {width:100%; height:100;}
+#placesMap {display:block; width:100%!important;}

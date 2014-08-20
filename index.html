@@ -103,8 +103,8 @@
                         <span class="skills">
 						<h3 class="text-center"> 
 						I am a <strong>Software Engineer</strong>.
-				   <br> I heavily <a href="https://www.codeplex.com/site/users/view/halilk" target="_blank">code</a> in C#, do mobile apps as a hobby, <a href="#portfolioModalTalks" class="portfolio-link" data-toggle="modal">talk</a> about my experience, 
-				   <br>	read <a href="#portfolioModalBooks" class="portfolio-link" data-toggle="modal">these</a> kind of books on my kindle, slap the bass on the stage, act in short movies and change the diaper.
+				   <br> I heavily <a href="https://www.codeplex.com/site/users/view/halilk" target="_blank">code</a> in C#, do some side projects, <a href="#portfolioModalTalks" class="portfolio-link" data-toggle="modal">talk</a> about my experience, 
+				   <br>	read <a href="#portfolioModalBooks" class="portfolio-link" data-toggle="modal">these</a> kind of books on my kindle, occasionally slap the bass on the stage, act in short films and very often change the diaper.
 				   </h3>													
 						</span>
 											
@@ -163,8 +163,7 @@
 							  var oTrack = (new Array().concat(JSONdata.recenttracks.track))[0];
 							  if(oTrack.image[1]["#text"] != "")
 								document.getElementById("lfmMostRecentTrackImage").src = oTrack.image[1]["#text"] ;
-							  if(oTrack.streamable == "1")
-								document.getElementById("lfmMostRecentTrackPlayIcon").style.display = "inline";
+								
 							  document.getElementById("lfmMostRecentTrackArtist").innerHTML = oTrack.artist["#text"];
 							  document.getElementById("lfmMostRecentTrackTitle").href = oTrack.url;
 							  document.getElementById("lfmMostRecentTrackTitle").innerHTML = oTrack.name;
