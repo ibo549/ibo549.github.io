@@ -102,8 +102,8 @@
                         <span class="skills">
 						<h3 class="text-center"> 
 						I am a <strong>Software Engineer</strong>.
-				   <br> I heavily <a href="https://www.codeplex.com/site/users/view/halilk" target="_blank">code</a> in C#, do some side projects, <a href="#portfolioModalTalks" class="portfolio-link" data-toggle="modal">talk</a> about my experience, 
-				  	read <a href="#portfolioModalBooks" class="portfolio-link" data-toggle="modal">these</a> kind of books on my kindle,  <br> occasionally <a href="#portfolioModalBass" class="portfolio-link" data-toggle="modal">slap the bass</a> on the stage, act in short films and very often change the diaper.
+				   <br> I heavily <a href="https://www.codeplex.com/site/users/view/halilk" target="_blank">code</a> in C#, do some side projects, <a href="#Talks" class="portfolio-link" data-toggle="modal">talk</a> about my experience, 
+				  	read <a href="#Books" class="portfolio-link" data-toggle="modal">these</a> kind of books on my kindle,  <br> occasionally <a href="#Bass" class="portfolio-link" data-toggle="modal">slap the bass</a> on the stage, act in short films and very often change the diaper.
 				   </h3>													
 						</span>
 											
@@ -113,11 +113,11 @@
 			</div>
 			<div class="row" align="center">						 
 							 <div class="col-lg-6">
-									<a title="Previous Places" href="#portfolioModalPlaces" class="portfolio-link btn-utility utility-btn-outline" data-toggle="modal"><i class="fa fa-fw fa-home"></i></a>
+									<a title="Previous Places" href="#Places" class="portfolio-link btn-utility utility-btn-outline" data-toggle="modal"><i class="fa fa-fw fa-home"></i></a>
 									<h5> I currently live in </br> Bielsko-Biała, Poland </h5>
 							</div>
 						 	 <div class="col-lg-6">
-								 	<a  title="Work History" href="#portfolioModalBooks"  class="portfolio-link btn-utility utility-btn-outline" data-toggle="modal"><i class="fa fa-fw fa-suitcase"></i></a>
+								 	<a  title="Work History" href="#Books"  class="portfolio-link btn-utility utility-btn-outline" data-toggle="modal"><i class="fa fa-fw fa-suitcase"></i></a>
 							</div>								 						
 			</div>
 		</div>
@@ -269,7 +269,7 @@
     </div>
 
     <!-- Portfolio Modals -->
-	<div class="portfolio-modal modal fade" id="portfolioModalBooks" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="portfolio-modal modal fade" id="Books" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -291,7 +291,7 @@
                 </div>
             </div>
     </div>	
-	<div class="portfolio-modal modal fade" id="portfolioModalTalks" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="portfolio-modal modal fade" id="Talks" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -321,7 +321,7 @@
                 </div>
             </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalPlaces" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="Places" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -346,7 +346,7 @@
                 </div>
             </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModalBass" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="Bass" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="bassMovie-content">
             <div class="bassMovieClose" data-dismiss="modal">
                 <div class="lr">
@@ -522,17 +522,17 @@
 $(document).ready(function () {
     var target = document.location.hash.replace("#", "");
     if (target.length) {
-        if(target=="portfolioModalBass"){
-          $('#portfolioModalBass').modal('show');
+        if(target=="Bass"){
+          $('#Bass').modal('show');
         }
-        else if(target=="portfolioModalBooks"){
-          $('#portfolioModalBooks').modal('show');
+        else if(target=="Books"){
+          $('#Books').modal('show');
         }
-		 else if(target=="portfolioModalTalks"){
-          $('#portfolioModalTalks').modal('show');
+		 else if(target=="Talks"){
+          $('#Talks').modal('show');
         }
-		 else if(target=="portfolioModalPlaces"){
-          $('#portfolioModalPlaces').modal('show');
+		 else if(target=="Places"){
+          $('#Places').modal('show');
         }
 		 
     }
