@@ -367,12 +367,12 @@ font-size: 0.7em;
     margin: 5px;
     font-size: 1em;
 }
-.portfolio-modal .modal-content h4 {
+.portfolio-modal .modal-content p {
     margin: -5px;
-    font-size: 1.1em;
-	LINE-HEIGHT:30px;	
-	font-weight: 100;
+    font-size: 1em;
+	LINE-HEIGHT: 30px;	
 	color: #45513F;
+	 font-weight: 100;
 }
 
 .portfolio-modal .modal-content a {
