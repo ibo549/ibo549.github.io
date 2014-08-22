@@ -3,6 +3,7 @@
  * Code licensed under the Apache License v2.0.
  */
 
+ 
 body {
     overflow-x: hidden;
 }
@@ -376,12 +377,8 @@ font-size: 0.7em;
 
 .portfolio-modal .modal-content a {
     margin: 0;
-
 	color: #AB6361;
     font-size: 1em;
-}
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px;
 }
 
 .portfolio-modal .modal-content .item-details {
@@ -418,6 +415,66 @@ font-size: 0.7em;
     width: 1px;
     height: 75px;
     background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+ 
+  
+/* Styles for the Slap the bass */
+.bassMovie-content
+{
+    background: url(http://giant.gfycat.com/DirectHighlevelGosling.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    padding: 80px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+	height: 100%;
+}
+ .bassMovie-content h5
+ {
+    margin: 5px;
+    font-size: 2em;
+	font-weight: 100;
+	color: #E6E6E6;
+ }
+ 
+ .bassMovieClose {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bassMovieClose:hover {
+    opacity: .3;
+}
+
+.bassMovieClose .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.bassMovieClose  .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #fff;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -553,3 +610,5 @@ width:70%!important;
 #talkvideo { width:70%!important; }
 
 #placesMap {display:block; width:100%!important;}
+
+
