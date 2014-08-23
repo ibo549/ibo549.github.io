@@ -658,7 +658,11 @@ font-weight: bold;
 
 #preziMe{
 width:36%!important;
-opacity: 0.9;
+opacity: 0.8;
+}
+#preziMe:hover
+{
+opacity: 0.99;
 }
 #preziDarkMatter{
 width:70%!important;
