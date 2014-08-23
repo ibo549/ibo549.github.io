@@ -90,12 +90,17 @@ hr.star-top:after {
 }
 
 hr.star-about {
-    border-color: #2c3e50;
+    border-color: #fff;
+	color: #fff;
+	opacity: 0.4;
+	border-top: solid 2px;
 }
 
 hr.star-about:after {
-    color: #2c3e50;
-    background-color: #DFE0D9;
+    color: #fff;	
+	opacity: 0.99;
+	padding: 0.02em;
+	padding-bottom: 3em;
 }
 
 .img-centered {
@@ -126,7 +131,7 @@ header img {
 header .intro-text .name {
     display: block;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 500;
 	font-size: 2em;
 }
 
@@ -220,6 +225,7 @@ section {
 
 section h2 {
     margin: 0;
+	font-weight: 300;
     font-size: 3em;
 }
 
@@ -587,7 +593,7 @@ background: black;
    margin: 0px auto;
    width: 270px;
    opacity: 0.5;
-   margin-top:80px;
+   margin-top:40px;
    color: #fff;
    transition: all .5s ease-in-out;
    cursor: default;
@@ -651,7 +657,8 @@ font-weight: bold;
 
 
 #preziMe{
-width:60%!important;
+width:36%!important;
+opacity: 0.9;
 }
 #preziDarkMatter{
 width:70%!important;
