@@ -226,6 +226,16 @@ section h2 {
 section.success {
     color: #233140;
     background: #DFE0D9;
+	background: url(http://i.imgur.com/ZoG4Pdi.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section.success h2 
+{
+color: #fff;
 }
 
 section.contact {
@@ -347,6 +357,13 @@ font-size: 0.7em;
     outline: 0;
 }
 
+.portfolio-modal
+{
+background: black;
+ min-height: 100%;
+ background-clip: border-box;
+}
+
 .portfolio-modal .modal-content {
     padding: 80px 0;
     min-height: 100%;
@@ -421,14 +438,9 @@ font-size: 0.7em;
 }
  
   
-/* Styles for the Slap the bass */
+/* Styles for the Slap the bass and short films*/
 .bassMovie-content
-{
-    background: url(http://giant.gfycat.com/DirectHighlevelGosling.gif) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+{  
     padding: 80px 0;
     min-height: 100%;
     border: 0;
@@ -436,13 +448,46 @@ font-size: 0.7em;
     text-align: center;
     background-clip: border-box;
 	height: 100%;
+	background: #fff;
 }
+
+#bassContent
+ {
+  background: url(http://giant.gfycat.com/DirectHighlevelGosling.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -khtml-opacity:.80; 
+ -moz-opacity:.80; 
+ -ms-filter:"alpha(opacity=80)";
+  filter:alpha(opacity=80);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);
+  opacity:.80; 
+ }
+ 
+ #movieContent
+ {
+   background: url(http://giant.gfycat.com/SimplisticCleanBluebreastedkookaburra.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -khtml-opacity:.50; 
+ -moz-opacity:.50; 
+ -ms-filter:"alpha(opacity=50)";
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50; 
+ }
+ 
  .bassMovie-content h5
  {
     margin: 5px;
     font-size: 2em;
 	font-weight: 100;
-	color: #E6E6E6;
+	color: #fff;
+	opacity:.99; 
  }
  
  .bassMovieClose {
@@ -535,7 +580,7 @@ font-size: 0.7em;
   }
 
 
- /* Last Song */
+ /* Last Song Listened*/
 .song{
   position: relative;
    overflow: hidden;
@@ -543,7 +588,7 @@ font-size: 0.7em;
    width: 270px;
    opacity: 0.5;
    margin-top:80px;
-   color: #233140;
+   color: #fff;
    transition: all .5s ease-in-out;
    cursor: default;
 }
@@ -553,7 +598,11 @@ font-size: 0.7em;
 .song.active
 {
 opacity: 1;
-color: #26ADA1;
+color: #fff;
+}
+
+.song a{
+color: red;
 }
 .songheader{
    width: 100%;
@@ -564,7 +613,7 @@ color: #26ADA1;
 
 .song:hover .songheader
 {
-color: #233140;
+color: #fff;
 }
 
 .song:hover  a

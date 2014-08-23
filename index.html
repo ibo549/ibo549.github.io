@@ -103,7 +103,7 @@
 						<h3 class="text-center"> 
 						I am a <strong>Software Engineer</strong>.
 				   <br> I heavily <a href="https://www.codeplex.com/site/users/view/halilk" target="_blank">code</a> in C#, do some side projects, <a href="#Talks" class="portfolio-link" data-toggle="modal">talk</a> about my experience, 
-				  	read <a href="#Books" class="portfolio-link" data-toggle="modal">these</a> kind of books on my kindle,  <br> occasionally <a href="#Bass" class="portfolio-link" data-toggle="modal">slap the bass</a> on the stage, act in short films and very often change the diaper.
+				  	read <a href="#Books" class="portfolio-link" data-toggle="modal">these</a> kind of books on my kindle,  <br> occasionally <a href="#Bass" class="portfolio-link" data-toggle="modal">slap the bass</a> on the stage, act in <a href="#Movie" class="portfolio-link" data-toggle="modal">short films</a> and very often change the diaper.
 				   </h3>													
 						</span>
 											
@@ -347,7 +347,7 @@
             </div>
     </div>
     <div class="portfolio-modal modal fade" id="Bass" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="bassMovie-content">
+        <div class="bassMovie-content" id="bassContent">
             <div class="bassMovieClose" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
@@ -359,6 +359,26 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h5>The Kanki's</h5>                                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+        </div>
+    </div>
+	<div class="portfolio-modal modal fade" id="Movie" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="bassMovie-content" id="movieContent">
+            <div class="bassMovieClose" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h5>Acting</h5>                                                    
                         </div>
                     </div>
                 </div>
@@ -520,19 +540,22 @@
 	<!-- /* Link directly to an open modal window with, a quick and dirty way. TODO: adopt angular sooner or later/-->
 	<script type="text/javascript"> 
 $(document).ready(function () {
-    var target = document.location.hash.replace("#", "");
+    var target = document.location.hash.replace("#", "").toLowerCase();
     if (target.length) {
-        if(target=="Bass"){
+        if(target=="bass" ){
           $('#Bass').modal('show');
         }
-        else if(target=="Books"){
+        else if(target=="books"){
           $('#Books').modal('show');
         }
-		 else if(target=="Talks"){
+		 else if(target=="talks"){
           $('#Talks').modal('show');
         }
-		 else if(target=="Places"){
+		 else if(target=="places"){
           $('#Places').modal('show');
+        }
+		else if(target=="movie"){
+          $('#Movie').modal('show');
         }
 		 
     }
