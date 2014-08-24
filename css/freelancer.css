@@ -92,7 +92,7 @@ hr.star-top:after {
 hr.star-about {
     border-color: #fff;
 	color: #fff;
-	opacity: 0.4;
+	opacity: 0.8;
 	border-top: solid 2px;
 }
 
@@ -365,6 +365,11 @@ font-size: 0.7em;
 
 .portfolio-modal
 {
+ width: 90%; /* desired relative width */
+  left: %5; /* (100%-width)/2 */
+  /* place center */
+  margin-left:auto;
+  margin-right:auto; 
 background: black;
  min-height: 100%;
  background-clip: border-box;
@@ -670,5 +675,3 @@ width:70%!important;
 #talkvideo { width:70%!important; }
 
 #placesMap {display:block; width:100%!important;}
-
-
