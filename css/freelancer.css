@@ -41,8 +41,8 @@ h3
     font-size: 1em;
 	font-weight: 500;
 }
-hr.star-light, hr.star-top,
-hr.star-primary,hr.star-about {
+ hr.star-top,
+hr.star-about, hr.star-work {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -51,8 +51,8 @@ hr.star-primary,hr.star-about {
     text-align: center;
 }
 
-hr.star-light:after, hr.star-top:after,
-hr.star-primary:after, hr.star-about:after{
+hr.star-top:after,
+hr.star-about:after, hr.star-work:after{
     content: "\f005";
     display: inline-block;
     position: relative;
@@ -62,22 +62,13 @@ hr.star-primary:after, hr.star-about:after{
     font-size: 2em;
 }
 
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
-}
-
-hr.star-primary {
+hr.star-work {
     border-color: #2c3e50;
 }
 
-hr.star-primary:after {
+hr.star-work:after {
     color: #2c3e50;
-    background-color: #fff;
+    background-color: #EDEDED;
 }
 
 hr.star-top {
@@ -382,7 +373,7 @@ background: black;
     border-radius: 0;
     text-align: center;
     background-clip: border-box;
-	background: #EEE6D9;
+	background: #EDEDED;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -405,7 +396,7 @@ background: black;
 
 .portfolio-modal .modal-content a {
     margin: 0;
-	color: #AB6361;
+	color: #B38A84;
     font-size: 1em;
 }
 
