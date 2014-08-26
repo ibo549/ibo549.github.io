@@ -239,7 +239,12 @@ section.contact {
     color: #233140;
     background: #EEE6D9;
 	padding: 0px 0;
-	padding-top: 80px;
+	padding-top: 100px;
+}
+
+#aroundTheWeb
+{
+	margin-bottom: 100px;
 }
 
 section .buttons{
