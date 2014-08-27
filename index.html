@@ -216,30 +216,8 @@
 	    						
 		<!-- Instagram Footer -->
 		<div class="footer-insta">
-		<script src="js/d3.v3.min.js"></script>
-    <script>
-        function insta(data) {
-            if ('data' in data) {
-                d = data['data'];
-                for(var j, x, i = d.length; i; j = Math.floor(Math.random() * i), x = d[--i], d[i] = d[j], d[j] = x);
-                d = d.slice(0, 8);
-                divs = d3.select('#insta').selectAll("div").data(d)
-                    .enter().append("div")
-                    .attr("class", "photo");
-                as = divs.append('a')
-                    .attr('href', function(d) {
-                    return d['link'];
-                });
-                is = as.append('img')
-                    .attr('src', function(d) {
-                    return d['images']['standard_resolution']['url'].replace('http://', 'https://');
-                })
-            }
-        }
-    </script>
-    <script async src='https://api.instagram.com/v1/users/21260701/media/recent?client_id=82c6efa279aa42239562bd4f35b355ad&count=40&callback=insta'></script>    
-	<div id='insta'></div>	 
-</div>
+		<div id='insta'></div>	 
+		</div>
 	
 		<!-- Copyright and Powered By Footer -->
 		<footer class="text-center">
@@ -301,15 +279,12 @@
 							<hr class="star-work">
 						<div class="talk"> 
 						<p> Me, talking in an <a href="http://opensourcedays.mikstura.it/" target="_blank">open-source conference</a>, about why one should contribute to open-source projects, 
-						<br/> the importance of giving back to the community and <a href="#prezi">how to do it</a>. Here is the last few minutes of the closing speech.  
+						<br/> the importance of giving back to the community and <a href="http://prezi.com/jba3nuitixyv/?utm_campaign=share&utm_medium=copy&rc=ex0share" target="_blank">how to do it</a>. Here is the last few minutes of the closing speech.  
 						</p> <br/>
 						<iframe id="talkvideo" src="//player.vimeo.com/video/91156672?color=f08c00&amp;autoplay=0" width="700" height="393" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
 						<br/>
 						</div>
-						 <hr class="star-top">
-						<div class="prezi" id="prezi">
-						<iframe id="preziDarkMatter" src="http://prezi.com/embed/jba3nuitixyv/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined&amp;html5=1"  height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>
-						</div>
+						
 					    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
@@ -448,14 +423,37 @@ $("[rel='tooltip']").tooltip();
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
 	
-
+	<!-- Instagram -->
+	<script src="js/d3.v3.min.js"></script>
+	<script>
+			function insta(data) {
+				if ('data' in data) {
+					d = data['data'];
+					for(var j, x, i = d.length; i; j = Math.floor(Math.random() * i), x = d[--i], d[i] = d[j], d[j] = x);
+					d = d.slice(0, 8);
+					divs = d3.select('#insta').selectAll("div").data(d)
+						.enter().append("div")
+						.attr("class", "photo");
+					as = divs.append('a')
+						.attr('href', function(d) {
+						return d['link'];
+					});
+					is = as.append('img')
+						.attr('src', function(d) {
+						return d['images']['standard_resolution']['url'].replace('http://', 'https://');
+					})
+				}
+			}
+		</script>
+    <script async src='https://api.instagram.com/v1/users/21260701/media/recent?client_id=82c6efa279aa42239562bd4f35b355ad&count=40&callback=insta'></script>    
+	
 	
 </body>
 
