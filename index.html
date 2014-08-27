@@ -156,7 +156,7 @@
 					</div>							
 				</div>
 				<div class="songcol2">
-				  <img id="lfmMostRecentTrackImage" src="http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png"/>	
+				  <img id="lfmMostRecentTrackImage"/>	
 				</div> 
 			</div> 
 			<script type="text/javascript" >
@@ -172,7 +172,7 @@
 							  document.getElementById("lfmMostRecentTrackDate").innerHTML = (typeof oTrack.date=="undefined"?"now playing":oTrack.date["#text"]);
 							}
 					</script>
-			<script type="text/javascript" src="http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=HalilKaraca&api_key=54f8f15133336606e882fdf20148d123&limit=1&format=json&callback=lfmMostRecentTrack"></script>				
+			<script async type="text/javascript" src="http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=HalilKaraca&api_key=54f8f15133336606e882fdf20148d123&limit=1&format=json&callback=lfmMostRecentTrack"></script>				
 	</div>
 	      
     </section>
@@ -221,7 +221,7 @@
 	    						
 		<!-- Instagram Footer -->
 		<div class="footer-insta">
-	<script src="https://ahmetalpbalkan.com/blog/theme/js/d3.v3.min.js"></script>
+		<script src="js/d3.v3.min.js"></script>
     <script>
         function insta(data) {
             if ('data' in data) {
@@ -283,7 +283,7 @@
 						<div class="books"> 
 						     <div id="gr_custom_widget_1408048327" align="center">							  
 							 </div>						
-							 <script src="https://www.goodreads.com/review/custom_widget/11762388.Halil's%20bookshelf?cover_position=left&cover_size=medium&num_books=10&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=3&widget_id=1408048327&widget_text_color=000000&widget_title_size=small&widget_width=full" type="text/javascript" charset="utf-8"></script>
+							 <script async src="https://www.goodreads.com/review/custom_widget/11762388.Halil's%20bookshelf?cover_position=left&cover_size=medium&num_books=10&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=3&widget_id=1408048327&widget_text_color=000000&widget_title_size=small&widget_width=full" type="text/javascript" charset="utf-8"></script>
 							</div>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
