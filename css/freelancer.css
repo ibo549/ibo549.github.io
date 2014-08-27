@@ -650,7 +650,7 @@ font-weight: bold;
 #lfmMostRecentTrackImage { width:48px; height:48px; float:right;}
 #lfmMostRecentTrack {margin-left: 5px;}
 
-
+ /* Prezi */
 
 #preziMe{
 width:36%!important;
@@ -666,3 +666,70 @@ width:70%!important;
 #talkvideo { width:70%!important; }
 
 #placesMap {display:block; width:100%!important;}
+
+ /* Instagram */
+ #insta {
+  width: 100%;
+  overflow: hidden; /* eliminates weird extra 2px at the bottom, somebody figured out on irc */
+}
+
+#insta .photo {
+    width: 12.5%;
+    float: left;
+  }
+
+#insta .photo a {
+      filter: grayscale(80%) brightness(140%);
+      -moz-filter: grayscale(80%) brightness(140%);
+      -webkit-filter: grayscale(80%) brightness(140%);
+      -ms-filter: grayscale(80%) brightness(140%);
+      -o-filter: grayscale(80%) brightness(140%);
+
+
+      transition: all .3s linear;
+      -webkit-transition: all .3s linear;
+      -moz-transition: all .3s linear;
+      -ms-transition: all .3s linear;
+      -o-transition: all .3s linear;
+    }
+
+#insta .photo a:hover {
+        filter: grayscale(0) brightness(100%);
+        -moz-filter: grayscale(0) brightness(100%);
+        -webkit-filter: grayscale(0) brightness(100%);
+        -ms-filter: grayscale(0) brightness(100%);
+        -o-filter: grayscale(0) brightness(100%);
+      }
+
+#insta .photo img {
+      width: 100%;
+      height: auto;
+      vertical-align: bottom;
+      -webkit-transform: translateZ(0); /* http://matthewhappen.com/fixing-css3-filter-blur-on-retina-displays/ */
+    }
+@media(min-width:900px){
+#post-info {
+    bottom: 150px;
+}
+
+#post-info h1 {
+    font-size: 56px;
+}
+
+.wide {
+    max-width: 1200px;
+    margin-left: -250px;
+}
+}
+
+@media(max-width:899px){
+#post-info h2 {
+    font-size: 18px;
+}
+
+#post-list h1 {
+    font-size: 20pt;
+}
+}
+
+	
