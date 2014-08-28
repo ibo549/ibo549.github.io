@@ -366,6 +366,7 @@ background: black;
  background-clip: border-box;
 }
 
+
 .portfolio-modal .modal-content {
     padding: 80px 0;
     min-height: 100%;
@@ -663,6 +664,7 @@ opacity: 0.99;
 #preziDarkMatter{
 width:70%!important;
 }
+
 #talkvideo { width:70%!important; }
 
 #placesMap {display:block; width:100%!important;}
@@ -732,4 +734,7 @@ width:70%!important;
 }
 }
 
-	
+#feed
+{
+	height: 300px;
+}
