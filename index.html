@@ -98,7 +98,7 @@
                         <hr class="star-top">
                         <span class="skills">
 						<h3 class="text-center"> 
-						I like to craft* things.
+						I like to craft<a rel="tooltip" data-placement="top" title="It’s not always software but most of the time it is." style="cursor: default;">*</a> things.
 				   <br> I heavily <a href="#Skills" rel="tooltip" data-placement="top" data-toggle="modal" title="programming skills">code</a> in C#, do some <a href="#SideProjects" class="portfolio-link" data-toggle="modal" rel="tooltip" data-placement="top" title="open-source projects (pop-up)">side projects</a>, <a href="#Talks" class="portfolio-link" data-toggle="modal" rel="tooltip" data-placement="top" title="on open-source projects">talk</a> about the experience, 
 				  	read <a href="#Books" class="portfolio-link" data-toggle="modal" rel="tooltip" data-placement="top" title="my recent books (pop-up)">these</a> kind of books on my kindle,  <br> occasionally <a href="#Bass" class="portfolio-link" data-toggle="modal">slap the bass</a> on the stage, act in <a href="#Movie" class="portfolio-link" data-toggle="modal">short films</a> and very often change the diaper.
 				   </h3>													
@@ -118,9 +118,7 @@
 									<h5> I work for</br> Pitney Bowes Software </h5>
 							</div>								 						
 			</div>
-			<div class="intro-text" style="font-size: 12px;">
-			 *It’s not always software but most of the time it is. 
-			</div>
+			
 		</div>
 		
     </header>
@@ -142,39 +140,42 @@
 			width="800" height="300" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>						
 			</div>
 
-	 <!-- The last Song I've listened on Spotify; retrieved through lastFm scrobbler. -->
-	  <div class="song" id="lastsong" data-toggle="tooltip"  data-placement="bottom"  title="Data is retrieved from Spotify, GrooveShark and my iPod through LastFM scrobbler API" >
-			<div class="songheader">
-			   <span id="lfmMostRecentHeading">this is the last song I've listened:</span> <br/>
-			</div>
-			<div class="songcolleft">
-				<div class="songcol1">	  		
-					<div 	id="lfmMostRecentTrack">			
-							<span id="lfmMostRecentTrackArtist"></span> - <a title="song page" id="lfmMostRecentTrackTitle" data-toggle="tooltip"  data-placement="right" href="" target="new"></a><br/>
-							<span id="lfmMostRecentTrackAlbum"></span><br/>
-							<span id="lfmMostRecentTrackDate"></span>  <br/>	
-					</div>							
-				</div>
-				<div class="songcol2">
-				  <img id="lfmMostRecentTrackImage"/>	
-				</div> 
-			</div> 
-			<script type="text/javascript" >
-							function lfmMostRecentTrack(JSONdata) {
-							  var oTrack = (new Array().concat(JSONdata.recenttracks.track))[0];
-							  if(oTrack.image[1]["#text"] != "")
-								document.getElementById("lfmMostRecentTrackImage").src = oTrack.image[1]["#text"] ;
-								
-							  document.getElementById("lfmMostRecentTrackArtist").innerHTML = oTrack.artist["#text"];
-							  document.getElementById("lfmMostRecentTrackTitle").href = oTrack.url;
-							  document.getElementById("lfmMostRecentTrackTitle").innerHTML = oTrack.name;
-							  document.getElementById("lfmMostRecentTrackAlbum").innerHTML = oTrack.album["#text"];
-							  document.getElementById("lfmMostRecentTrackDate").innerHTML = (typeof oTrack.date=="undefined"?"now playing":oTrack.date["#text"]);
-							}
-					</script>
-			<script async type="text/javascript" src="http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=HalilKaraca&api_key=54f8f15133336606e882fdf20148d123&limit=1&format=json&callback=lfmMostRecentTrack"></script>				
-	</div>
-	      
+			 <div class="row">
+			<div class="col-lg-3 col-centered">
+						 <!-- The last Song I've listened on Spotify; retrieved through lastFm scrobbler. -->
+						  <div class="song" id="lastsong" data-toggle="tooltip"  data-placement="bottom"  title="Data is retrieved from Spotify, GrooveShark and my iPod through LastFM scrobbler API" >
+								<div class="songheader">
+								   <span id="lfmMostRecentHeading">this is the last song I've listened:</span> <br/>
+								</div>
+								<div class="songcolleft">
+									<div class="songcol1">	  		
+										<div 	id="lfmMostRecentTrack">			
+												<span id="lfmMostRecentTrackArtist"></span> - <a title="song page" id="lfmMostRecentTrackTitle" data-toggle="tooltip"  data-placement="right" href="" target="new"></a><br/>
+												<span id="lfmMostRecentTrackAlbum"></span><br/>
+												<span id="lfmMostRecentTrackDate"></span>  <br/>	
+										</div>							
+									</div>
+									<div class="songcol2">
+									  <img id="lfmMostRecentTrackImage"/>	
+									</div> 
+								</div> 
+								<script type="text/javascript" >
+												function lfmMostRecentTrack(JSONdata) {
+												  var oTrack = (new Array().concat(JSONdata.recenttracks.track))[0];
+												  if(oTrack.image[1]["#text"] != "")
+													document.getElementById("lfmMostRecentTrackImage").src = oTrack.image[1]["#text"] ;
+													
+												  document.getElementById("lfmMostRecentTrackArtist").innerHTML = oTrack.artist["#text"];
+												  document.getElementById("lfmMostRecentTrackTitle").href = oTrack.url;
+												  document.getElementById("lfmMostRecentTrackTitle").innerHTML = oTrack.name;
+												  document.getElementById("lfmMostRecentTrackAlbum").innerHTML = oTrack.album["#text"];
+												  document.getElementById("lfmMostRecentTrackDate").innerHTML = (typeof oTrack.date=="undefined"?"now playing":oTrack.date["#text"]);
+												}
+										</script>
+								<script async type="text/javascript" src="http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=HalilKaraca&api_key=54f8f15133336606e882fdf20148d123&limit=1&format=json&callback=lfmMostRecentTrack"></script>				
+						</div>
+						</div>
+	      </div>
     </section>
 	
 	 <!-- Around the Web Section & Footers -->
@@ -261,7 +262,7 @@
 					<h5>Skills</h5>
 					<hr class="star-work">
 					<!-- Nav tabs -->
-						<ul class="nav nav-tabs nav-justified" role="tablist">
+						<ul class="nav nav-tabs" role="tablist">
 						  <li class="active"><a href="#core" role="tab" data-toggle="tab">Skills</a></li>
 						  <li><a href="#disciplines" role="tab" data-toggle="tab">Disciplines</a></li>
 						</ul>						
@@ -277,7 +278,7 @@
 										
 										 <div class="list-group-item">
 												<h4 class="list-group-item-heading">Front-End</h4>
-												<p class="list-group-item-text"> HTML5 - CSS - JavaScript 
+												<p class="list-group-item-text"> HTML5 - CSS - JavaScript - XAML
 												<br>Frameworks: Angular.js - Knockout.js - Bootstrap 
 												</p>
 										</div>
@@ -307,7 +308,7 @@
 										 <div class="list-group-item">
 											<h4 class="list-group-item-heading">Excellent Understanding of</h4>
 											<p class="list-group-item-text">
-											OOP & Design Patterns 
+											OOP & Design Patterns <br>
 											 Test Driven Development<br>
 											 API design<br>
 											 Cloud Platforms<br>
@@ -347,10 +348,13 @@
 						</div>
                         <br>
 						<br>
-						<h5 style="font-size: 15px">Recent GitHub Activity</h5>					
-						<div id="feed"></div>					
-						<br> <br>
+						<h5 style="font-size: 15px">Recent GitHub Activity</h5>
+						 <div class="col-md-6 col-md-offset-3">
+						 	<div id="feed"></div>	
+							<br> <br>
 						<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						 </div>
+												
                         </div>
                     </div>
                 </div>
@@ -389,7 +393,7 @@
             <div class="container">
                 <div class="row">                  
                     <div class="modal-body">
-						<div class="books"> 
+						<div class="col-lg-6 col-centered">
 						     <div id="gr_custom_widget_1408048327" align="center">							  
 							 </div>						
 							 <script async src="https://www.goodreads.com/review/custom_widget/11762388.Halil's%20bookshelf?cover_position=left&cover_size=medium&num_books=10&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=3&widget_id=1408048327&widget_text_color=000000&widget_title_size=small&widget_width=full" type="text/javascript" charset="utf-8"></script>
@@ -412,21 +416,26 @@
             <div class="container">
                 <div class="row">                  
                     <div class="modal-body">
-						<h5>Community Talks</h5>
-							<hr class="star-work">
-						<div class="talk"> 
-						<p> Me, talking in an <a href="http://opensourcedays.mikstura.it/" target="_blank">open-source conference</a>, about why one should contribute to open-source projects, 
-						<br/> the importance of giving back to the community and <a href="http://prezi.com/jba3nuitixyv/?utm_campaign=share&utm_medium=copy&rc=ex0share" target="_blank">how to do it</a>. Here is the last few minutes of the closing speech.  
-						</p> <br/>
-						<iframe id="talkvideo" src="//player.vimeo.com/video/91156672?color=f08c00&amp;autoplay=0" width="700" height="393" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-						<br/>
-						</div>
-						
-					    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							<h5>Community Talks</h5>
+								<hr class="star-work">
+							<div class="talk"> 
+								<br/> <br/>
+									<div id="talkText" class="col-lg-8 col-centered">
+											  Me, talking in an <a href="http://opensourcedays.mikstura.it/" target="_blank">open-source conference</a>, about why one should contribute to open-source projects, 
+											 the importance of giving back to the community and <a href="http://prezi.com/jba3nuitixyv/?utm_campaign=share&utm_medium=copy&rc=ex0share" target="_blank">how to do it</a>. Here is the last few minutes of the closing speech. <br> <div style="font-style: italic; font-size: 12px; text-align:right;"> May, 2014 - Bielsko-Biała, Poland </div> 
+											
+									<br/> <br/>
+										<iframe id="talkvideo" src="//player.vimeo.com/video/91156672?color=f08c00&amp;autoplay=0" width="700" height="393" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+									<br/>
+										
+									</div>
+							
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							</div>
                         </div>
                     </div>
                 </div>
-            </div>
+         </div>
     </div>
     <div class="portfolio-modal modal fade" id="Places" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -485,7 +494,7 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h5>Acting</h5>                                                    
+                            <h5>The Diary (Günlük)</h5>                                                    
                         </div>
                     </div>
                 </div>
