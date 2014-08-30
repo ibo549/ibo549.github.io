@@ -182,28 +182,31 @@ header .intro-text .skills {
 		font-weight: 300;
     }
 }
-
+ .navbar-fixed-top .navbar-brand {
+ margin-top: -18px;
+ }
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 16px 0;
+        padding: 14px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
     }
 
     .navbar-fixed-top .navbar-brand {
-        font-size: 1.7em;
+        font-size: 1.3em;		
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
     }
 
     .navbar-fixed-top.navbar-shrink {
-        padding: 1px 0;
+        padding: 0px 0;
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1em;
+		margin-top: 0px;
     }
 }
 
@@ -789,3 +792,25 @@ width:70%!important;
 {
 text-align: left;
 }
+
+
+.site-logo{
+float:left;
+margin-right:32px;
+margin-right:2rem;
+-webkit-animation-fill-mode:both;
+-moz-animation-fill-mode:both;
+-ms-animation-fill-mode:both;
+-o-animation-fill-mode:both;
+animation-fill-mode:both;
+-webkit-animation-duration:1s;
+-moz-animation-duration:1s;
+-ms-animation-duration:1s;
+-o-animation-duration:1s;
+animation-duration:1s;
+-webkit-animation-name:bounceIn;
+-moz-animation-name:bounceIn;
+-o-animation-name:bounceIn;
+animation-name:bounceIn}@-webkit-keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(0.3)}50%{opacity:1;-webkit-transform:scale(1.05)}70%{-webkit-transform:scale(0.9)}100%{-webkit-transform:scale(1)}}@-moz-keyframes bounceIn{0%{opacity:0;-moz-transform:scale(0.3)}50%{opacity:1;-moz-transform:scale(1.05)}70%{-moz-transform:scale(0.9)}100%{-moz-transform:scale(1)}}@-o-keyframes bounceIn{0%{opacity:0;-o-transform:scale(0.3)}50%{opacity:1;-o-transform:scale(1.05)}70%{-o-transform:scale(0.9)}100%{-o-transform:scale(1)}}@keyframes bounceIn{0%{opacity:0;transform:scale(0.3)}50%{opacity:1;transform:scale(1.05)}70%{transform:scale(0.9)}100%{transform:scale(1)}}
+.svg-logo{width:96px;width:6rem;height:96px;height:6rem;-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out}
+.svg-logo:hover{-webkit-transform:scale(1.125) rotate(2deg);-ms-transform:scale(1.125) rotate(2deg);transform:scale(1.125) rotate(2deg)}nav{text-transform:uppercase}nav a:link,nav a:visited{color:gray}nav a:hover{color:#2077b2}nav a:focus,nav a:active{color:#2ecc71}
