@@ -375,14 +375,26 @@
 					<div class="container">
 				    <div class="row"> 												
 							<div class="modal-body">
+									<h5>Side Projects</h5>
+									<hr class="star-work">
 									<div class="col-lg-12">
-										<p>I am still designing this section to showcase my projects. Please check back in a week and you will see some content here. </p> <br> <br><br><br>							
-																			
+										<p>I am still designing this section to showcase my projects. Please check back in a week and you will see some content here. </p> <br> <br><br><br>																										
 									</div>
-									<br> <br> <br>
 									
 									<div class="projectSlider col-lg-12">
-													  <div>#1 Phone Guitar Tab</div>
+													  <div id="phoneGuitarTab">
+															<h4> Phone Guitar Tab </h4>
+															<br> <br> <br>
+															<div class="col-md-8" style="text-align:justify;">
+																<p style="margin-left:10px;"> Phone Guitar Tab is a guitar/bass/drums tab application for Windows Phone that provides search/download/stream and many other capabilities for musicians.
+																It's the #1 music tool on the Store and very often featured by Microsoft.
+															</div>
+															<div class="col-md-4">
+															<img data-lazy="img/app.gif" style="display:block; margin-left:auto; margin-right:auto;" />
+															</div>
+															
+													  </div>
+													  
 													  <div>#2 Phone Core</div>										 
 									</div>		
 										<br> <br> <br>
@@ -390,6 +402,7 @@
 									<div class="col-lg-8 col-centered">
 										<div id="disqus_thread"></div>
 									</div>	
+								
 									<script type="text/javascript">
 										
 										var disqus_shortname = 'halilk'; 							
@@ -399,6 +412,7 @@
 											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 										})();
 									</script>
+										<br> <br> <br>
 								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 							  </div>
 					</div>
@@ -622,6 +636,7 @@ $(document).ready(function () {
 	<script type="text/javascript"> 
 $(document).ready(function () {
 $('.projectSlider').slick({ 
+	lazyLoad: 'ondemand',
 	dots: true,	
 	speed: 500
   });
