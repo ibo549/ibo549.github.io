@@ -429,7 +429,7 @@ background: black;
 .portfolio-modal .modal-content p {
     margin: -5px;
     font-size: 1em;
-	LINE-HEIGHT: 30px;	
+	LINE-HEIGHT: 25px;	
 	color: #45513F;
 	 font-weight: 100;
 }
@@ -479,6 +479,15 @@ background: black;
     transform: rotate(90deg);
 }
  
+#quotes p{
+font-size: 12px;
+line-height: 12px;
+}
+#quotes small {
+font-size: 10px;
+margin-top: 5px;
+}
+
   
 /* Styles for the Slap the bass and short films*/
 .bassMovie-content

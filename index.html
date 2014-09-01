@@ -363,8 +363,7 @@
             </div>
 		
     </div>		
-	<div class="portfolio-modal modal" id="SideProjects" tabindex="-1" role="dialog" aria-hidden="true">	
-	
+	<div class="portfolio-modal modal" id="SideProjects" tabindex="-1" role="dialog" aria-hidden="true">		
             <div class="modal-content">
 					<div class="close-modal" data-dismiss="modal">
 						<div class="lr">
@@ -377,33 +376,55 @@
 							<div class="modal-body">
 									<h5>Side Projects</h5>
 									<hr class="star-work">
-									<div class="col-lg-12">
-										<p>I am still designing this section to showcase my projects. Please check back in a week and you will see some content here. </p> <br> <br><br><br>																										
-									</div>
 									
 									<div class="projectSlider col-lg-12">
-													  <div id="phoneGuitarTab">
+										<div id="phoneGuitarTab">
 															<h4> Phone Guitar Tab </h4>
-															<br> <br> <br>
+															<br> 
 															<div class="col-md-8" style="text-align:justify;">
-																<p style="margin-left:10px;"> Phone Guitar Tab is a guitar/bass/drums tab application for Windows Phone that provides search/download/stream and many other capabilities for musicians.
-																It's the #1 music tool on the Store and very often featured by Microsoft.
+																<p style="margin-left:10px;"> Phone Guitar Tab is a <b>guitar/bass/drums</b> tab application for Windows Phone that provides search, download, upload, music streaming 
+																	and many other capabilities to give a great experience to <b>musicians</b> 
+																	while they are practising their <b>favourite songs</b> with their instruments.	
+																</p>
+																 
+																<br>
+																<div class="col-md-10 col-centered"> 
+																	<ul  class="list-group"> 
+																	<li class="list-group-item"> <p>#1 productivity tool for musicians on Store and very often featured by Microsoft. </p> </li>
+																	<li class="list-group-item"> <p>Actively developed by 2 devs; release a month. </p> </li>
+																	<li class="list-group-item"> <p>Open-source, ad-free and has much <i class="fa fa-heart" style="margin:5px; font-size:15px; color:#DF0101;" > </i> from the folks all around the globe.</p> </li>  
+																	</ul>
+																</div>	
+																
+																<div class="col-md-12" id="quotes">
+																<br>
+																	<div class="col-md-6" >															
+																		<blockquote> <p>"My breath has been taken away by this app. Did not expect anything this smooth running, gorgeous and functional. This app will be a top download for any musician. Amazing job"</p> <p><small >Ryan</small></p></blockquote>																
+																	</div>
+																	<div class="col-md-6" >	
+																		<blockquote class="blockquote-reverse"> <p>"Amazing app, great selection and quick and easy to use, great layout too."</p> <p><small >Bradley</small></p></blockquote>															
+																	</div>
+																</div>
 															</div>
-															<div class="col-md-4">
-															<img data-lazy="img/app.gif" style="display:block; margin-left:auto; margin-right:auto;" />
+													      
+														  <div class="col-md-4">
+																<img data-lazy="img/app.gif" style="display:block; margin-left:auto; margin-right:auto;" />
+																<br>
+																<a href="https://phoneguitartab.codeplex.com/" target="_blank">Project Page</a>
 															</div>
-															
-													  </div>
+										</div>
+													
 													  
-													  <div>#2 Phone Core</div>										 
-									</div>		
-										<br> <br> <br>
-										<br> <br> <br>
+										<div>#2 Phone Core</div>	
+									</div>
+																				
 									<div class="col-lg-8 col-centered">
-										<div id="disqus_thread"></div>
-									</div>	
-								
-									<script type="text/javascript">
+									
+										<div id="disqus_thread">
+										<br> <br> <br>
+										</div>
+									
+										<script type="text/javascript">
 										
 										var disqus_shortname = 'halilk'; 							
 										(function() {
@@ -412,14 +433,17 @@
 											(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 										})();
 									</script>
-										<br> <br> <br>
-								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+									</div>	
+																	
+									<div class="col-lg-12">	
+										<br> </br> <br></br> 
+										<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+									</div>
 							  </div>
 					</div>
                 </div>
             </div>
-		
-    </div>	
+	</div>
 	<div class="portfolio-modal modal fade" id="Books" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -637,7 +661,8 @@ $(document).ready(function () {
 $(document).ready(function () {
 $('.projectSlider').slick({ 
 	lazyLoad: 'ondemand',
-	dots: true,	
+	dots: true,
+	swipe: false,
 	speed: 500
   });
 
