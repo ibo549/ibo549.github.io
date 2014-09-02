@@ -165,6 +165,14 @@ header .intro-text .name {
 header .intro-text .skills {
     font-size: 1em;
     font-weight: 100;
+	color: #2c3e50;
+}
+
+header small{
+	font-size: 10px;
+	
+	color: #2c3e50;
+	 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 @media(min-width:768px) {
@@ -181,6 +189,13 @@ header .intro-text .skills {
         font-size: 1.30em;
 		font-weight: 300;
     }
+header small{
+	font-size: 12px;
+	
+	color: #2c3e50;
+	 font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 }
  .navbar-fixed-top .navbar-brand {
  margin-top: -18px;
