@@ -424,7 +424,7 @@
 															</div>
 													      
 														  <div class="col-md-4">
-																<img data-lazy="img/app.gif" style="display:block; margin-left:auto; margin-right:auto;" />
+																<img src="img/app.gif" style="display:block; margin-left:auto; margin-right:auto;" />
 																<br>
 																<a href="https://phoneguitartab.codeplex.com/" target="_blank">Project Page</a>
 																<br>
@@ -452,7 +452,7 @@
 												</div>
 												
 												<div class="col-md-6" >
-													<img data-lazy="img/Framework.png" style=" margin-left:auto; margin-right:auto; width:90%;"  />
+													<img src="img/Framework.png" style=" margin-left:auto; margin-right:auto; width:90%;"  />
 																<br>
 													<a href="https://phonecore.codeplex.com/" target="_blank">Project Page</a>
 												</div>
@@ -698,9 +698,8 @@ $(document).ready(function () {
 	<script type="text/javascript"> 
 $(document).ready(function () {
 $('.projectSlider').slick({ 
-	lazyLoad: 'ondemand',
 	dots: true,
-	swipe: false,
+	swipe: true,
 	speed: 500
   });
 
