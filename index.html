@@ -10,12 +10,12 @@
 	
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
     <title>Halil Ibrahim Karaca - Software Engineer</title>
-	<meta property="og:title" content="Halil Ibrahim Karaca - Software Engineer" />
+	<meta property="og:title" content="Halil Ibrahim Karaca - Senior Software Engineer" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://www.halilk.com/" />
 <meta property="og:image" content="http://www.halilk.com/img/profile.png" />
 	
-	<meta name="description=" content="I am a Software Engineer. 
+	<meta name="description=" content="I am a Senior Software Engineer. 
 										I heavily code in C# and C++, do mobile apps as a hobby, talk about my experience, 
 									     read these kind of books on my kindle, slap the bass on the stage and act in short movies.">
     <meta name="msvalidate.01" content="4A0BE4018BBE88EFCBC558C34E5AA7D4" />
@@ -759,7 +759,7 @@ $("#SideProjects").on('shown.bs.modal', function (e) {
 									<br> 
 								</div>
 								<div class="col-lg-12">
-									<p> Meet my daughter <b> Leyla Antonina </b>. She is one year old. She is half Turkish - half Polish. <br> and you know.. Her diaper needs to be changed. :)
+									<p> Meet my daughter <b> Leyla Antonina </b>. She is <span id="LeylaAge"></span><a rel="tooltip" data-placement="top" title="I wrote a little function to calculate her age automatically." style="cursor: default;">*</a> years old. She is half Turkish - half Polish. <br> and you know.. Her diaper needs to be changed. :)
 									<br> 
 									<br>
 									<br>
@@ -771,5 +771,26 @@ $("#SideProjects").on('shown.bs.modal', function (e) {
 					</div>
 				</div>
 			</div>
-	</div>	
+	</div>
+	<script>
+
+	</script>	
+		<script type="text/javascript"> 
+$(document).ready(function () {
+//calculate lilka's age
+
+  function getAge(dateString) {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+	
+	document.getElementById("LeylaAge").innerHTML = getAge("2014/08/06");
+});
+	</script>
 </html>
