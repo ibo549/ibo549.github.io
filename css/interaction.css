@@ -759,14 +759,14 @@ opacity: 0.99;
     }
 
 #mePhoto {
-     filter: grayscale(70%) brightness(110%);
-      -moz-filter: grayscale(70%) brightness(110%);
-      -webkit-filter: grayscale(70%) brightness(110%);
-      -ms-filter: grayscale(70%) brightness(110%);
-      -o-filter: grayscale(70%) brightness(110%);
+     filter: grayscale(80%) brightness(140%);
+      -moz-filter: grayscale(80%) brightness(140%);
+      -webkit-filter: grayscale(80%) brightness(140%);
+      -ms-filter: grayscale(80%) brightness(140%);
+      -o-filter: grayscale(80%) brightness(140%);
 }
 
-#mePhoto:hover,
+#mePhoto:hover, #meintro:hover > #mePhoto,
 #insta .photo a:hover {
         filter: grayscale(0) brightness(100%);
         -moz-filter: grayscale(0) brightness(100%);
