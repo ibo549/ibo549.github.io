@@ -420,7 +420,7 @@ color: #e2ab79;
 .portfolio-modal
 {
  width: 90%; /* desired relative width */
-  left: %5; /* (100%-width)/2 */
+  left: 5%; /* (100%-width)/2 */
   /* place center */
   margin-left:auto;
   margin-right:auto; 
@@ -712,7 +712,7 @@ font-weight: bold;
    left: 2%;
   
 }
-#lfmMostRecentTrackDate {font-style;italic}
+#lfmMostRecentTrackDate {font-style:italic}
 #lfmMostRecentTrackImage { width:48px; height:48px; float:right;}
 #lfmMostRecentTrack {margin-left: 5px;}
 
@@ -742,7 +742,7 @@ opacity: 0.99;
     width: 12.5%;
     float: left;
   }
-
+#mePhoto,
 #insta .photo a {
       filter: grayscale(80%) brightness(140%);
       -moz-filter: grayscale(80%) brightness(140%);
@@ -758,6 +758,15 @@ opacity: 0.99;
       -o-transition: all .3s linear;
     }
 
+#mePhoto {
+     filter: grayscale(70%) brightness(110%);
+      -moz-filter: grayscale(70%) brightness(110%);
+      -webkit-filter: grayscale(70%) brightness(110%);
+      -ms-filter: grayscale(70%) brightness(110%);
+      -o-filter: grayscale(70%) brightness(110%);
+}
+
+#mePhoto:hover,
 #insta .photo a:hover {
         filter: grayscale(0) brightness(100%);
         -moz-filter: grayscale(0) brightness(100%);
