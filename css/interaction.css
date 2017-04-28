@@ -181,7 +181,7 @@ header small{
     }
 
     header .intro-text .name {
-        font-size: 4em;
+        font-size: 2.5em;
     }
 
     header .intro-text .skills {
@@ -199,6 +199,13 @@ header small{
  .navbar-fixed-top .navbar-brand {
  margin-top: -18px;
  }
+ @media(max-width:600px) {
+ #mePhoto{
+     width: 35% !important;
+     height: 35% !important;
+ }
+ }
+
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding:  0;
@@ -909,86 +916,3 @@ animation-name:bounceIn}@-webkit-keyframes bounceIn{0%{opacity:0;-webkit-transfo
 
 
 
-/* Scroll for More Btn */
-.scroll-more {
-	display: inline-block;
-	height: 36px;
-	color: #fff;
-	text-decoration: none;
-	font-size: 14px;
-	-webkit-backface-visibility: hidden;
-	margin-bottom: 65px;
-}
-.scroll-more:hover,
-.scroll-more:focus {
-	color: #fff;
-	text-decoration: none;
-}
-.scroll-more span {
-	display: inline-block;
-	vertical-align: middle;
-	opacity: .5;
-	-webkit-transition: opacity 0.3s;
-					transition: opacity 0.3s;
-}
-.scroll-more:hover span {
-	opacity: 1;
-}
-.scroll-more .icon {
-	position: relative;
-	display: inline-block;
-	width: 36px;
-	height: 36px;
-	vertical-align: middle;
-	border: 1px solid #fff;
-	border-radius: 50%;
-	margin-right: 8px;
-	padding: 8px 0 0 12px;
-}
-.scroll-more .icon:before {
-	display: block;
-	width: 10px;
-	height: 18px;
-	content: "";
-	border: 1px solid #fff;
-	border-radius: 12px;
-}
-.scroll-more .icon:after {
-	position: absolute;
-	display: block;
-	top: 11px;
-	left: 16px;
-	width: 2px;
-	height: 4px;
-	content: "";
-	background-color: #fff;
-	-webkit-animation: scroll 1.2s infinite;
-					animation: scroll 1.2s infinite;
-}
-@-webkit-keyframes scroll {
-    0% { opacity: .8; -webkit-transform: translateY(0); }
-   60% { opacity: .6; }
-  100% { opacity: 0; -webkit-transform: translateY(8px); }
-}
-@-moz-keyframes scroll {
-    0% { opacity: .8; -moz-transform: translateY(0); }
-   60% { opacity: .6; }
-  100% { opacity: 0; -moz-transform: translateY(8px); }
-}
-@-ms-keyframes scroll {
-    0% { opacity: .8; -ms-transform: translateY(0); }
-   60% { opacity: .6; }
-  100% { opacity: 0; -ms-transform: translateY(8px); }
-}
-@keyframes scroll {
-    0% { opacity: .8; transform: translateY(0); }
-   60% { opacity: .6; }
-  100% { opacity: 0; transform: translateY(8px); }
-}
-.intro .intro-features .icon-block {
-	opacity: 0;
-	-webkit-transform: translateX(50px);
-					transform: translateX(50px);
-	-webkit-transition: opacity .5s, -webkit-transform .5s;
-					transition: opacity .5s, transform .5s;
-}
