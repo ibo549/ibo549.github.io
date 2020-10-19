@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://halilk.com/about/</loc>
+    <lastmod>2020-10-16T03:07:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://halilk.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://halilk.com/</loc>
+  </url>
+  
+  <url>
+    <loc>http://halilk.com/series/</loc>
+  </url>
+  
+  <url>
+    <loc>http://halilk.com/tags/</loc>
+  </url>
+  
+</urlset>
