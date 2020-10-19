@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on halil karaca</title>
-    <link>https://ibo549.github.io/series/</link>
+    <link>http://halilk.com/series/</link>
     <description>Recent content in Series on halil karaca</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ibo549.github.io/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://halilk.com/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
