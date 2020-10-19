@@ -1,0 +1,20 @@
+<a href="{{ .Site.Params.Logo.LogoHomeLink }}" style="text-decoration: none;"> 
+    <div class="logo">
+            <span class="logo__balloon">{{ partial "balloon-logo.html" . }}</span>         
+            <span class="logo__mark">></span>
+            <span class="logo__text">
+                {{ .Site.Params.Logo.logoText }}
+            </span>
+            <span class="logo__text">
+                {{ if not .IsHome }}
+                    {{ if eq .Type "posts" }} 
+                        {{ print .Type }} 
+                    {{ else }}
+                        {{ lower .Title }}
+                    {{end}}
+                {{ end }}
+            </span>
+            <span class="logo__cursor">
+      </span>           
+    </div>
+</a>
