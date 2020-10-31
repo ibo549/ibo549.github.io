@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>halil karaca</title>
-    <link>http://halilk.com/</link>
+    <link>https://www.halilk.com/</link>
     <description>Recent content on halil karaca</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2020 13:39:33 +0100</lastBuildDate><atom:link href="http://halilk.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Oct 2020 13:39:33 +0100</lastBuildDate><atom:link href="https://www.halilk.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HipVisit</title>
-      <link>http://halilk.com/side-projects/hipvisit/</link>
+      <link>https://www.halilk.com/side-projects/hipvisit/</link>
       <pubDate>Mon, 26 Oct 2020 13:39:33 +0100</pubDate>
       
-      <guid>http://halilk.com/side-projects/hipvisit/</guid>
+      <guid>https://www.halilk.com/side-projects/hipvisit/</guid>
       <description>Single Page Apps were about to storm out the classical client-server MVC type of web application approach. Cloud transformation of most enterprises was just starting. There wasn&amp;rsquo;t a better time to experiment with a cloud native app, to find a niche and build a SaaS business around it.
 I was trapped in doing CRUD apps in my day job and had a colleague who felt the same way. Both looking for something more challenging and the urge of having fun creating something together.</description>
     </item>
     
     <item>
       <title>Phone Guitar Tab</title>
-      <link>http://halilk.com/side-projects/phone-guitar-tab/</link>
+      <link>https://www.halilk.com/side-projects/phone-guitar-tab/</link>
       <pubDate>Sun, 25 Oct 2020 12:07:58 +0100</pubDate>
       
-      <guid>http://halilk.com/side-projects/phone-guitar-tab/</guid>
+      <guid>https://www.halilk.com/side-projects/phone-guitar-tab/</guid>
       <description>Circa 2013, Daft Punk just released Random Access Memories and it was one of those evenings where I was on the hunt for finding an open-source project to contribute to. Instead of toying with pet projects on my own, I wanted to experience developing with other fellow developers on the wild. Get over that anxiety of posting your first Pull Request on a public repository. No matter how small, I had to find a project, which I may or may not be an already a user of it, understand it and contribute.</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://halilk.com/projects/</link>
+      <link>https://www.halilk.com/projects/</link>
       <pubDate>Tue, 20 Oct 2020 22:45:50 +0200</pubDate>
       
-      <guid>http://halilk.com/projects/</guid>
+      <guid>https://www.halilk.com/projects/</guid>
       <description>I like to try new things just to see how they&amp;rsquo;ll turn out.
 Often times the drive comes from curiosity and experience software craftsmanship beyond the reach of my day job. I do hands-on work with new tech of my choice, make good friends online or drag my inner circle into the floating ideas so that we can execute them together. In some cases even generate a passive income - the one that makes you earn ＄＄＄ while sleeping.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://halilk.com/about/</link>
+      <link>https://www.halilk.com/about/</link>
       <pubDate>Fri, 16 Oct 2020 03:07:45 +0200</pubDate>
       
-      <guid>http://halilk.com/about/</guid>
+      <guid>https://www.halilk.com/about/</guid>
       <description>Hi! I am Halil.
 🇵🇱 A software engineer based in Poland.
 👨🏼‍💻 Currently Senior Software Engineer at Avantida
