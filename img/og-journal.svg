@@ -1,105 +1,76 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <!-- Subtle radial gradient for depth/atmosphere -->
     <radialGradient id="bg" cx="50%" cy="42%" r="65%">
       <stop offset="0%" stop-color="#1f2035"/>
       <stop offset="100%" stop-color="#131422"/>
     </radialGradient>
   </defs>
 
-  <!-- Background with depth -->
   <rect width="1200" height="630" fill="url(#bg)"/>
 
-  <!-- Delicate inner border frame (Ottoman manuscript reference) -->
+  <!-- Delicate inner border frame -->
   <rect x="30" y="25" width="1140" height="580" rx="0" ry="0"
         fill="none" stroke="#c4b5fd" stroke-width="0.5" opacity="0.12" />
-  <!-- Corner accents (small diamonds at corners) -->
   <path d="M 30,25 L 35,30 L 30,35 L 25,30 Z" fill="#c4b5fd" opacity="0.15" />
   <path d="M 1170,25 L 1175,30 L 1170,35 L 1165,30 Z" fill="#c4b5fd" opacity="0.15" />
   <path d="M 30,605 L 35,600 L 30,595 L 25,600 Z" fill="#c4b5fd" opacity="0.15" />
   <path d="M 1170,605 L 1175,600 L 1170,595 L 1165,600 Z" fill="#c4b5fd" opacity="0.15" />
 
-  <!-- Main title — italic serif for journal/manuscript feel -->
-  <text x="600" y="270" text-anchor="middle"
+  <!-- Main title — scaled up -->
+  <text x="600" y="260" text-anchor="middle"
         font-family="Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif"
-        font-size="54" font-weight="400" font-style="italic"
-        fill="#a99be0" letter-spacing="4">halil's journal</text>
+        font-size="72" font-weight="400" font-style="italic"
+        fill="#a99be0" letter-spacing="5">halil's journal</text>
 
-  <!-- =========================================== -->
-  <!-- OTTOMAN ORNAMENTAL SEPARATOR — THE HERO     -->
-  <!-- Shamsa + Rumi scrollwork + Tığ terminals    -->
-  <!-- =========================================== -->
-  <g transform="translate(600, 335)" fill="#c4b5fd">
-
-    <!-- CENTRAL SHAMSA (multi-layered diamond medallion) -->
+  <!-- Ottoman ornamental separator — scaled 1.3x -->
+  <g transform="translate(600, 340) scale(1.3)" fill="#c4b5fd">
     <path d="M 0,-16 L 14,0 L 0,16 L -14,0 Z" opacity="0.5" />
     <circle cx="0" cy="0" r="7" fill="#1f2035" />
-    <!-- Inner 4-point star (two overlapping diamonds) -->
     <path d="M 0,-5.5 L 2.2,0 L 0,5.5 L -2.2,0 Z" opacity="0.6" />
     <path d="M -5.5,0 L 0,-2.2 L 5.5,0 L 0,2.2 Z" opacity="0.6" />
     <circle cx="0" cy="0" r="1.8" opacity="0.65" />
 
-    <!-- Shamsa flanking dots -->
     <circle cx="-22" cy="0" r="2" opacity="0.45" />
     <circle cx="22" cy="0" r="2" opacity="0.45" />
-    <!-- Vertical accent dots -->
     <circle cx="0" cy="-22" r="1.3" opacity="0.3" />
     <circle cx="0" cy="22" r="1.3" opacity="0.3" />
 
-    <!-- ===== LEFT SIDE ===== -->
-    <!-- Main islimi S-curve -->
     <path d="M -28,0 C -60,0 -85,-14 -130,-14 C -175,-14 -210,-5 -245,0"
           fill="none" stroke="#c4b5fd" stroke-width="1.6" opacity="0.55" />
-
-    <!-- Rumi half-palmette 1: upward at ~-70 -->
     <path d="M -68,-9 C -72,-20 -68,-30 -63,-33 C -62,-28 -64,-18 -68,-9 Z" opacity="0.4" />
     <path d="M -68,-9 C -63,-17 -58,-22 -55,-23"
           fill="none" stroke="#c4b5fd" stroke-width="0.8" opacity="0.35" />
-
-    <!-- Rumi half-palmette 2: downward at ~-125 -->
     <path d="M -125,-13 C -130,-4 -128,5 -123,9 C -122,5 -123,-4 -125,-13 Z" opacity="0.35" />
-
-    <!-- Rumi half-palmette 3: upward at ~-190 -->
     <path d="M -190,-9 C -195,-19 -192,-28 -188,-30 C -187,-25 -188,-16 -190,-9 Z" opacity="0.35" />
     <path d="M -190,-9 C -185,-15 -181,-19 -178,-20"
           fill="none" stroke="#c4b5fd" stroke-width="0.7" opacity="0.3" />
-
-    <!-- Tığ terminal — bold pointed teardrop -->
     <path d="M -245,0 C -252,-4 -262,-8 -275,0 C -262,8 -252,4 -245,0 Z" opacity="0.5" />
-
-    <!-- Accent dots along left curve -->
     <circle cx="-45" cy="-5" r="1.1" opacity="0.3" />
     <circle cx="-155" cy="-13" r="1.1" opacity="0.25" />
 
-    <!-- ===== RIGHT SIDE (mirror) ===== -->
     <path d="M 28,0 C 60,0 85,-14 130,-14 C 175,-14 210,-5 245,0"
           fill="none" stroke="#c4b5fd" stroke-width="1.6" opacity="0.55" />
-
     <path d="M 68,-9 C 72,-20 68,-30 63,-33 C 62,-28 64,-18 68,-9 Z" opacity="0.4" />
     <path d="M 68,-9 C 63,-17 58,-22 55,-23"
           fill="none" stroke="#c4b5fd" stroke-width="0.8" opacity="0.35" />
-
     <path d="M 125,-13 C 130,-4 128,5 123,9 C 122,5 123,-4 125,-13 Z" opacity="0.35" />
-
     <path d="M 190,-9 C 195,-19 192,-28 188,-30 C 187,-25 188,-16 190,-9 Z" opacity="0.35" />
     <path d="M 190,-9 C 185,-15 181,-19 178,-20"
           fill="none" stroke="#c4b5fd" stroke-width="0.7" opacity="0.3" />
-
     <path d="M 245,0 C 252,-4 262,-8 275,0 C 262,8 252,4 245,0 Z" opacity="0.5" />
-
     <circle cx="45" cy="-5" r="1.1" opacity="0.3" />
     <circle cx="155" cy="-13" r="1.1" opacity="0.25" />
   </g>
 
-  <!-- Secondary text — serif, peach, spaced -->
-  <text x="600" y="400" text-anchor="middle"
+  <!-- Secondary text — scaled up -->
+  <text x="600" y="415" text-anchor="middle"
         font-family="Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif"
-        font-size="15" font-weight="400" fill="#f5c8a8" opacity="0.45"
+        font-size="21" font-weight="400" fill="#f5c8a8" opacity="0.5"
         letter-spacing="6" word-spacing="4">thoughts &amp; reflections</text>
 
-  <!-- URL — whisper quiet -->
-  <text x="600" y="425" text-anchor="middle"
+  <!-- URL — scaled up -->
+  <text x="600" y="448" text-anchor="middle"
         font-family="Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif"
-        font-size="10" font-weight="400" fill="#a99be0" opacity="0.25"
+        font-size="13" font-weight="400" fill="#a99be0" opacity="0.3"
         letter-spacing="4">halilk.com</text>
 </svg>
