@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Rounded background -->
+  <rect width="512" height="512" rx="160" ry="160" fill="#1a1b2e"/>
+
+  <!-- > chevron -->
+  <path d="M 145,175 L 250,256 L 145,337"
+        fill="none" stroke="#a99be0" stroke-width="30"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Block cursor -->
+  <rect x="305" y="155" width="85" height="202" rx="6"
+        fill="#00FF41"/>
+</svg>
