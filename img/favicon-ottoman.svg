@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect x="0" y="0" width="512" height="512" rx="80" ry="80" fill="#1a1b2e"/>
+
+  <!-- Ottoman geometric H monogram built from diamond shapes -->
+  <g opacity="0.85">
+    <!-- Left vertical stroke: elongated diamond -->
+    <polygon points="160,256 160,100 160,256" fill="none"/>
+    <polygon points="160,80 200,256 160,432 120,256" fill="#c4b5fd"/>
+
+    <!-- Right vertical stroke: elongated diamond -->
+    <polygon points="352,80 392,256 352,432 312,256" fill="#c4b5fd"/>
+
+    <!-- Horizontal connector: diamond in the middle -->
+    <polygon points="200,236 256,216 312,236 256,276" fill="#c4b5fd"/>
+
+    <!-- Small decorative diamond accents at the tips -->
+    <!-- Top left -->
+    <polygon points="160,60 172,80 160,100 148,80" fill="#a99be0"/>
+    <!-- Top right -->
+    <polygon points="352,60 364,80 352,100 340,80" fill="#a99be0"/>
+    <!-- Bottom left -->
+    <polygon points="160,412 172,432 160,452 148,432" fill="#a99be0"/>
+    <!-- Bottom right -->
+    <polygon points="352,412 364,432 352,452 340,432" fill="#a99be0"/>
+
+    <!-- Center accent diamond -->
+    <polygon points="256,226 266,246 256,266 246,246" fill="#f5c8a8" opacity="0.7"/>
+  </g>
+</svg>
