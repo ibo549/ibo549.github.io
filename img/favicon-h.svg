@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <!-- Background -->
-  <rect x="0" y="0" width="512" height="512" rx="80" ry="80" fill="#1a1b2e"/>
-  <!-- Stylized lowercase italic h -->
-  <text x="256" y="410" font-family="Palatino, 'Palatino Linotype', Georgia, 'Times New Roman', serif" font-size="420" font-style="italic" font-weight="normal" fill="#a99be0" text-anchor="middle">h</text>
-</svg>
