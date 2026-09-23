@@ -1,5 +1,5 @@
 {
-    "name": "halilk",
+    "name": "Halil Karaca",
     "short_name": "halilk",
     "icons": [
         {
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#c1bdbd",
-    "background_color": "#c1bdbd",
+    "theme_color": "#060b1e",
+    "background_color": "#060b1e",
     "display": "standalone"
 }
