@@ -5,5 +5,14 @@
  Dear reader, if you&amp;rsquo;re coming across this page in 2026 you gotta remember the context here. These projects were built in the dark ages of software development, when we had to type every single character of code by hand. Every. Single. One. There was no &amp;ldquo;hey agent, build me a SaaS app&amp;rdquo;. No watching AI implement things on a whim while you sip your coffee. We used to sit there, stare at the screen, and manually write every function, every CSS rule, every API call. Character by character. Bug by bug. Deploy by deploy. It was slow, sometimes painful but it was kinda fine too when you get that dopamine hit solving a bug at 3 a.m. Do I miss those times? Nah not much. But these are old relics from those days and they deserve some respect.
 &lt;/aside&gt;
 
-&lt;p&gt;I like to try new things just to see how they&amp;rsquo;ll turn out.&lt;/p&gt;</description></item><item><title>About</title><link>https://halilk.com/about/</link><pubDate>Fri, 16 Oct 2020 03:07:45 +0200</pubDate><guid>https://halilk.com/about/</guid><description>&lt;p&gt;Programming is a hobby from my early childhood days. I have been doing it for more than 15 years professionally. I happened to live in a few different countries either as an expat software engineer or for obtaining degrees in software engineering (Estonia, UK, Turkey, and currently Poland).&lt;/p&gt;
-&lt;p&gt;🎯 I am a bit obsessed with good quality software. Good enough is usually not good enough for me. Starting from the ideation, through UX, into the design of an architecture that scales, implementation of the MVP, creation of devops pipelines, gathering feedback from end-users.. repeat until it becomes perfect. I love being in every phase of it, one way or another.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;I like to try new things just to see how they&amp;rsquo;ll turn out.&lt;/p&gt;</description></item><item><title>About</title><link>https://halilk.com/about/</link><pubDate>Fri, 16 Oct 2020 03:07:45 +0200</pubDate><guid>https://halilk.com/about/</guid><description>&lt;div class="plate plate--left"&gt;
+ &lt;img class="plate-art" src="https://halilk.com/img/about/computer.webp" alt="" width="320" height="320" loading="lazy" decoding="async"&gt;
+ &lt;div class="plate-text"&gt;Programming has been my hobby since early childhood, and my profession for more than 15 years. Along the way I&amp;rsquo;ve lived in Estonia, the UK, Turkey and now Poland, as an expat engineer or to study software engineering.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="plate plate--right"&gt;
+ &lt;img class="plate-art" src="https://halilk.com/img/about/bottle.webp" alt="" width="320" height="320" loading="lazy" decoding="async"&gt;
+ &lt;div class="plate-text"&gt;I&amp;rsquo;m a bit obsessed with good quality software. From the first idea through UX, an architecture that scales, the MVP and the pipelines, to feedback from real users, then round again until it&amp;rsquo;s right. I love every phase of it.&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p class="pullquote"&gt;The last ten percent is my favorite part.&lt;/p&gt;</description></item></channel></rss>
